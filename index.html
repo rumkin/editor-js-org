@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Editor</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        padding: 0; }
+
+      body {
+        min-height: 100%;
+        display: flex; }
+
+      #editor {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="editor"></editor>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" language="javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/theme-chrome.js" type="text/javascript" language="javascript"></script>
+    <script>
+      'use strict';
+
+      var editor = ace.edit("editor");
+
+      editor.setTheme("ace/theme/chrome");
+      editor.getSession().setMode("ace/mode/javascript");
+      editor.focus();
+    </script>
+  </body>
+</html>
