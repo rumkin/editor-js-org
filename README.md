@@ -1,2 +1,3 @@
-# editor-js-org
-Online editor
+# Editor.js.org
+
+Online js editor with multiple backend support.
